@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.5'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets'
+gem 'bcrypt'
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
