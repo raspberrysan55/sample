@@ -179,14 +179,19 @@ function calc(start_date, end_date){
 
 //data1
   var number1 = 0;
+  var check1 = false;
   var pos1 = new google.maps.LatLng(data1[0].pos[1], data1[0].pos[0]);
 
   for (i=0; i < data1.length; i++) {
-      if(data1[i].datetime === start_date){
+      if(data1[i].datetime == start_date){
             start_address = i;
-      }else if(data1[i].datetime === end_date){
+      }if(data1[i].datetime == end_date){
             end_address = i;
-      }
+            check1 = true;
+      }        
+   }
+   if(check1 == false){
+        end_address = data1.length - 1;
    }
 
   for (i=start_address; i < end_address + 1; i++) {
@@ -202,14 +207,19 @@ function calc(start_date, end_date){
  
 //data2
   var number2 = 0;
+  var check2 = false;
   var pos2 = new google.maps.LatLng(data2[0].pos[1], data2[0].pos[0]);
 
   for (i=0; i < data2.length; i++) {
-      if(data2[i].datetime === start_date){
+      if(data2[i].datetime == start_date){
             start_address = i;
-      }else if(data2[i].datetime === end_date){
+      }if(data2[i].datetime == end_date){
             end_address = i;
-      }
+            check2 = true;
+      }        
+   }
+   if(check2 == false){
+          end_address = data2.length - 1;
    }
 
   for (i=start_address; i < end_address + 1; i++) {
@@ -225,14 +235,19 @@ function calc(start_date, end_date){
 
 //data3
   var number3 = 0;
+  var check3 = false;
   var pos3 = new google.maps.LatLng(data3[0].pos[1], data3[0].pos[0]);
 
   for (i=0; i < data3.length; i++) {
-      if(data3[i].datetime === start_date){
+      if(data3[i].datetime == start_date){
             start_address = i;
-      }else if(data3[i].datetime === end_date){
+      }if(data3[i].datetime == end_date){
             end_address = i;
-      }
+            check3 = true;
+      }        
+   }
+   if(check3 == false){
+          end_address = data3.length - 1;
    }
 
   for (i=start_address; i < end_address + 1; i++) {
