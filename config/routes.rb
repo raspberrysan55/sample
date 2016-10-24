@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  get "map_pages/top"
   resources :users do
     member do
       get :following, :followers
