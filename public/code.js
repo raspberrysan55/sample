@@ -1,48 +1,97 @@
 
 /*---- 自販機データ ----*/
-var data1 = [];
-data1 =  [
-    {number:20, pos:[139.715370, 35.563758], datetime:"20161020160000"},
-    {number:50, pos:[139.715370, 35.563758], datetime:"20161020160001"},
-    {number:30, pos:[139.715370, 35.563758], datetime:"20161020160002"},
-    {number:10, pos:[139.715370, 35.563758], datetime:"20161020160003"},
-    {number:5, pos:[139.715370, 35.563758], datetime:"20161020160004"},
-    {number:80, pos:[139.715370, 35.563758], datetime:"20161020160005"},
-    {number:60, pos:[139.715370, 35.563758], datetime:"20161020160006"},
-    {number:40, pos:[139.715370, 35.563758], datetime:"20161020160007"},
-    {number:10, pos:[139.715370, 35.563758], datetime:"20161020160008"},
-    {number:10, pos:[139.715370, 35.563758], datetime:"20161020160009"},
-    {number:5, pos:[139.715370, 35.563758], datetime:"20161020160010"}
-];
-
-var data2 = [];
-data2 =  [
-    {number:10, pos:[139.714469, 35.563217], datetime:"20161020160000"},
-    {number:5, pos:[139.714469, 35.563217], datetime:"20161020160001"},
-    {number:60, pos:[139.714469, 35.563217], datetime:"20161020160002"},
-    {number:80, pos:[139.714469, 35.563217], datetime:"20161020160003"},
-    {number:30, pos:[139.714469, 35.563217], datetime:"20161020160004"},
-    {number:5, pos:[139.714469, 35.563217], datetime:"20161020160005"},   
-    {number:5, pos:[139.714469, 35.563217], datetime:"20161020160006"},
-    {number:10, pos:[139.714469, 35.563217], datetime:"20161020160007"},
-    {number:30, pos:[139.714469, 35.563217], datetime:"20161020160008"},
-    {number:50, pos:[139.714469, 35.563217], datetime:"20161020160009"},
-    {number:5, pos:[139.714469, 35.563217], datetime:"20161020160010"}
-];
-
-var data3 = [];
-data3 =  [
-    {number:20, pos:[139.715197, 35.561949], datetime:"20161020160000"},
-    {number:10, pos:[139.715197, 35.561949], datetime:"20161020160001"},
-    {number:80, pos:[139.715197, 35.561949], datetime:"20161020160002"},
-    {number:90, pos:[139.715197, 35.561949], datetime:"20161020160003"},
-    {number:5, pos:[139.715197, 35.561949], datetime:"20161020160004"},
-    {number:10, pos:[139.715197, 35.561949], datetime:"20161020160005"},
-    {number:20, pos:[139.715197, 35.561949], datetime:"20161020160006"},
-    {number:10, pos:[139.715197, 35.561949], datetime:"20161020160007"},
-    {number:50, pos:[139.715197, 35.561949], datetime:"20161020160008"},
-    {number:10, pos:[139.715197, 35.561949], datetime:"20161020160009"},
-    {number:5, pos:[139.715197, 35.561949], datetime:"20161020160010"}
+var data =
+[
+  {
+    "pos":[139.715370, 35.563758],
+    "passengers":[
+                       {"number":20, "datetime":"20161020160000"},
+                       {"number":50, "datetime":"20161020160001"},
+                       {"number":30, "datetime":"20161020160002"},
+                       {"number":10, "datetime":"20161020160003"},
+                       {"number":5, "datetime":"20161020160004"},
+                       {"number":80, "datetime":"20161020160005"},
+                       {"number":60, "datetime":"20161020160006"},
+                       {"number":40, "datetime":"20161020160007"},
+                       {"number":10, "datetime":"20161020160008"},
+                       {"number":10, "datetime":"20161020160009"}
+                       ]
+   },
+   {
+    "pos":[139.714469, 35.563217],
+    "passengers":[
+                       {"number":10, "datetime":"20161020160000"},
+                       {"number":5, "datetime":"20161020160001"},
+                       {"number":60, "datetime":"20161020160002"},
+                       {"number":80, "datetime":"20161020160003"},
+                       {"number":30, "datetime":"20161020160004"},
+                       {"number":5, "datetime":"20161020160005"},
+                       {"number":5, "datetime":"20161020160006"},
+                       {"number":10, "datetime":"20161020160007"},
+                       {"number":30, "datetime":"20161020160008"},
+                       {"number":50, "datetime":"20161020160009"}
+                       ]
+   },
+   {
+    "pos":[139.715197, 35.561949],
+    "passengers":[
+                       {"number":20, "datetime":"20161020160000"},
+                       {"number":10, "datetime":"20161020160001"},
+                       {"number":80, "datetime":"20161020160002"},
+                       {"number":90, "datetime":"20161020160003"},
+                       {"number":5, "datetime":"20161020160004"},
+                       {"number":10, "datetime":"20161020160005"},
+                       {"number":20, "datetime":"20161020160006"},
+                       {"number":10, "datetime":"20161020160007"},
+                       {"number":50, "datetime":"20161020160008"},
+                       {"number":10, "datetime":"20161020160009"}
+                       ]
+   },
+   {
+    "pos":[139.716934, 35.563361],
+    "passengers":[
+                       {"number":20, "datetime":"20161020160000"},
+                       {"number":90, "datetime":"20161020160001"},
+                       {"number":60, "datetime":"20161020160002"},
+                       {"number":10, "datetime":"20161020160003"},
+                       {"number":40, "datetime":"20161020160004"},
+                       {"number":0, "datetime":"20161020160005"},
+                       {"number":30, "datetime":"20161020160006"},
+                       {"number":0, "datetime":"20161020160007"},
+                       {"number":70, "datetime":"20161020160008"},
+                       {"number":5, "datetime":"20161020160009"}
+                       ]
+   },   
+   {
+    "pos":[139.713209, 35.562354],
+    "passengers":[
+                       {"number":20, "datetime":"20161020160000"},
+                       {"number":40, "datetime":"20161020160001"},
+                       {"number":0, "datetime":"20161020160002"},
+                       {"number":5, "datetime":"20161020160003"},
+                       {"number":70, "datetime":"20161020160004"},
+                       {"number":10, "datetime":"20161020160005"},
+                       {"number":90, "datetime":"20161020160006"},
+                       {"number":50, "datetime":"20161020160007"},
+                       {"number":30, "datetime":"20161020160008"},
+                       {"number":5, "datetime":"20161020160009"}
+                       ]
+   },
+   {
+    "pos":[139.713418, 35.564226],
+    "passengers":[
+                       {"number":0, "datetime":"20161020160000"},
+                       {"number":10, "datetime":"20161020160001"},
+                       {"number":40, "datetime":"20161020160002"},
+                       {"number":5, "datetime":"20161020160003"},
+                       {"number":90, "datetime":"20161020160004"},
+                       {"number":30, "datetime":"20161020160005"},
+                       {"number":50, "datetime":"20161020160006"},
+                       {"number":0, "datetime":"20161020160007"},
+                       {"number":80, "datetime":"20161020160008"},
+                       {"number":20, "datetime":"20161020160009"}
+                       ]
+   }
 ];
 
 var map_canvas;
@@ -62,7 +111,7 @@ function initialize() {
   map_canvas = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
     }
 
-/*---- ヒートマップ表示処理 ----*/
+/*---- 人数表示処理 ----*/
 function display() {
 
 /*---- ヒートマップ、マーカー、サークルクリア処理 ----*/
@@ -114,7 +163,7 @@ heatmap.setMap(map_canvas);
 /*---- サークルを描画 ----*/
 for(var i=0; i < pass_list.length; i++){
 // 通過人数が100人未満の場合
-/*  
+/* 
 if(pass_list[i].weight > 0 && pass_list[i].weight < 100){
      var circle = new google.maps.Circle({
          strokeColor: '#0066FF',
@@ -127,6 +176,7 @@ if(pass_list[i].weight > 0 && pass_list[i].weight < 100){
          radius: Math.sqrt(pass_list[i].weight) * 2
      });
      circle_list.push(circle);
+*/
 // 通過人数が100人以上200人未満の場合
 /*
 }else if(pass_list[i].weight >= 100 && pass_list[i].weight < 200 ){
@@ -141,6 +191,7 @@ if(pass_list[i].weight > 0 && pass_list[i].weight < 100){
         radius: Math.sqrt(pass_list[i].weight) * 2
      });
      circle_list.push(circle);
+*/
 // 通過人数が200人以上の場合
 /*
 }else{
@@ -175,91 +226,40 @@ function calc(start_date, end_date){
   var start_address;
   var end_address;
   var i;
+  var j;
   var bounds = new google.maps.LatLngBounds();
 
-//data1
-  var number1 = 0;
-  var check1 = false;
-  var pos1 = new google.maps.LatLng(data1[0].pos[1], data1[0].pos[0]);
+  var number;
+  var check = false;
+  var pos;
 
-  for (i=0; i < data1.length; i++) {
-      if(data1[i].datetime == start_date){
-            start_address = i;
-      }if(data1[i].datetime == end_date){
-            end_address = i;
-            check1 = true;
-      }        
-   }
-   if(check1 == false){
-        end_address = data1.length - 1;
-   }
+  for (i=0; i < data.length; i++) {
+     number = 0;
+     pos = new google.maps.LatLng(data[i].pos[1], data[i].pos[0]);
 
-  for (i=start_address; i < end_address + 1; i++) {
-        number1 = number1 + data1[i].number;
-   }
+    for(j = 0; j < data[i].passengers.length; j++){
+        if(data[i].passengers[j].datetime == start_date){
+              start_address = j;
+        }if(data[i].passengers[j].datetime == end_date){
+              end_address = j;
+              check = true;
+        }        
+     }
+    if(check == false){
+          end_address = data[i].passengers.length - 1;
+    }
+  
+    for (j=start_address; j < end_address + 1; j++) {
+          number = number + data[i].passengers[j].number;
+    }
 
-  list.push({
-        location : pos1,
-        weight : number1
+    list.push({
+          location : pos,
+          weight : number
     });
 
-  bounds.extend(pos1);
- 
-//data2
-  var number2 = 0;
-  var check2 = false;
-  var pos2 = new google.maps.LatLng(data2[0].pos[1], data2[0].pos[0]);
-
-  for (i=0; i < data2.length; i++) {
-      if(data2[i].datetime == start_date){
-            start_address = i;
-      }if(data2[i].datetime == end_date){
-            end_address = i;
-            check2 = true;
-      }        
-   }
-   if(check2 == false){
-          end_address = data2.length - 1;
-   }
-
-  for (i=start_address; i < end_address + 1; i++) {
-          number2 = number2 + data2[i].number;
-     }
-
-  list.push({
-          location : pos2,
-          weight : number2
-      });
-
-  bounds.extend(pos2);
-
-//data3
-  var number3 = 0;
-  var check3 = false;
-  var pos3 = new google.maps.LatLng(data3[0].pos[1], data3[0].pos[0]);
-
-  for (i=0; i < data3.length; i++) {
-      if(data3[i].datetime == start_date){
-            start_address = i;
-      }if(data3[i].datetime == end_date){
-            end_address = i;
-            check3 = true;
-      }        
-   }
-   if(check3 == false){
-          end_address = data3.length - 1;
-   }
-
-  for (i=start_address; i < end_address + 1; i++) {
-          number3 = number3 + data3[i].number;
-     }
-
-  list.push({
-          location : pos3,
-          weight : number3
-      });
-
-  bounds.extend(pos3);
+    bounds.extend(pos);
+  }
 
   return list;
 }
