@@ -114,7 +114,7 @@ function initialize() {
 /*---- 人数表示処理 ----*/
 function display() {
 
-/*---- ヒートマップ、マーカー、サークルクリア処理 ----*/
+/*---- ヒートマップ、人数マーカークリア処理 ----*/
 if(heatmap != null){
 heatmap.setMap(null);
 }
@@ -160,55 +160,8 @@ heatmap = new google.maps.visualization.HeatmapLayer({
 heatmap.setData(pass_list);
 heatmap.setMap(map_canvas);
 
-/*---- サークルを描画 ----*/
-for(var i=0; i < pass_list.length; i++){
-// 通過人数が100人未満の場合
-/* 
-if(pass_list[i].weight > 0 && pass_list[i].weight < 100){
-     var circle = new google.maps.Circle({
-         strokeColor: '#0066FF',
-         strokeOpacity: 0.35,
-         strokeWeight: 1,
-         fillColor: '#0066FF',
-         fillOpacity: 0.35,
-         map: map_canvas,
-         center: pass_list[i].location,
-         radius: Math.sqrt(pass_list[i].weight) * 2
-     });
-     circle_list.push(circle);
-*/
-// 通過人数が100人以上200人未満の場合
-/*
-}else if(pass_list[i].weight >= 100 && pass_list[i].weight < 200 ){
-     var circle = new google.maps.Circle({
-        strokeColor: '#FFCC00',
-        strokeOpacity: 0.35,
-        strokeWeight: 1,
-        fillColor: '#FFCC00',
-        fillOpacity: 0.35,
-        map: map_canvas,
-        center: pass_list[i].location,
-        radius: Math.sqrt(pass_list[i].weight) * 2
-     });
-     circle_list.push(circle);
-*/
-// 通過人数が200人以上の場合
-/*
-}else{
-      var circle = new google.maps.Circle({
-        strokeColor: '#FF3200',
-        strokeOpacity: 0.35,
-        strokeWeight: 1,
-        fillColor: '#FF3200',
-        fillOpacity: 0.35,
-        map: map_canvas,
-        center: pass_list[i].location,
-        radius: Math.sqrt(pass_list[i].weight) * 2
-      });
-      circle_list.push(circle);
-}
-*/
 /*---- 通過人数のマーカーを表示 ----*/
+for(var i=0; i < pass_list.length; i++){
 var marker = new google.maps.Marker({
               position : pass_list[i].location,
               clickable : false,
